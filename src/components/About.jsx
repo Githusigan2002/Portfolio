@@ -1,4 +1,4 @@
-import profilePic from "../assets/profile-pic.png";
+import profilePic from "../../public/assets/profile-pic.png";
 
 const About = () => {
   const stats = [
