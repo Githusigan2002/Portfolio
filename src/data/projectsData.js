@@ -1,14 +1,14 @@
-import MovieExp from "../assets/movie_exp.png";
-import WeatherApp from "../assets/weather_app.png";
+import movie_exp from '../../public/assets/movie_exp.png';
+import weather_app from '../../public/assets/weather_app.png';
 export const projectsData = [
     {
         id: 1,
         title: 'Movie Explorer',
         description: 'A dynamic web application that allows users to search, browse, and discover movies using the TMDB API. Features include movie details, ratings, and trending sections.',
-        image: MovieExp,
+        image: movie_exp,
         techStack: ['React.js', 'TMDB API', 'CSS', 'JavaScript'],
         github: 'https://github.com/githusigan2002/movie-explorer',
-        liveDemo:'https://githusigan2002.github.io/MovieExplorer/',
+        liveDemo: 'https://githusigan2002.github.io/MovieExplorer/',
         demo: null,
         category: 'frontend'
     },
@@ -16,7 +16,7 @@ export const projectsData = [
         id: 2,
         title: 'Weather App',
         description: 'Real-time weather application providing current weather conditions, forecasts, and location-based weather data using OpenWeatherMap API.',
-        image: WeatherApp,
+        image: weather_app,
         techStack: ['React.js', 'OpenWeatherMap API', 'CSS', 'JavaScript'],
         github: 'https://github.com/githusigan2002/weatherapp',
         liveDemo: 'https://githusigan2002.github.io/WeatherApp/',
@@ -39,7 +39,7 @@ export const projectsData = [
         description: 'An elegant digital clock application displaying real-time updates with customizable themes and display formats.',
         image: 'https://plus.unsplash.com/premium_photo-1661329920696-d9792be2ae5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRpZ2l0YWwlMjBjbG9ja3xlbnwwfHwwfHx8MA%3D%3D',
         techStack: ['JavaScript', 'HTML', 'CSS'],
-        github: 'https://github.com/Githusigan2002/DigitalClock'    ,
+        github: 'https://github.com/Githusigan2002/DigitalClock',
         demo: null,
         category: 'frontend'
     },
