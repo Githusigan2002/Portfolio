@@ -31,10 +31,12 @@ const ProjectCard = ({ project }) => {
                         <span key={index} className="text-[10px] font-bold uppercase tracking-widest px-3 py-1 bg-white/5 text-text-tertiary rounded-md border border-white/5">{tech}</span>
                     ))}
                 </div>
-                <a href={github || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold bg-gradient-primary bg-clip-text text-transparent hover:text-text-primary transition-all group/link w-fit">
-                    View Project Case Study
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-                </a>
+                {github && (
+                    <a href={github} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold bg-gradient-primary bg-clip-text text-transparent hover:text-text-primary transition-all group/link w-fit">
+                        View Project Case Study
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                )}
                 {liveDemo && (
                     <a href={liveDemo} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold bg-gradient-primary bg-clip-text text-transparent hover:text-text-primary transition-all group/link w-fit">
                         Live Demo
